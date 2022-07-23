@@ -176,7 +176,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Helvetica Neue",Helvetica,Arial,cursive;
+    font-size: 1.5em !important;
     color: #{{ site.data.template.color.primary }};
 }
 
@@ -238,7 +239,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: transparent;
+        /* background-color: transparent; */
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -269,13 +270,13 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+    background-image: url('{{ site.baseurl }}/img/header-bg.png');
     background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: 50%;
+    -moz-background-size: 50%;
+    background-size: 50%;
+    -o-background-size: 50%;
 }
 
 header .intro-text {
@@ -289,6 +290,7 @@ header .intro-text .intro-lead-in {
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
+    color: black !important;
 }
 
 header .intro-text .intro-heading {
@@ -298,6 +300,7 @@ header .intro-text .intro-heading {
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
+    color: black !important;
 }
 
 @media(min-width:768px) {

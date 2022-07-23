@@ -8,11 +8,16 @@
 
     {% include header.html %}
     {% include services.html %}
+
+    {% comment %}
     {% include portfolio_grid.html %}
     {% include about.html %}
     {% include team.html %}
-    {% include clients.html %}
     {% include contact.html %}
+    {% endcomment %}
+
+    {% include clients.html %}
+
     {% include footer.html %}
     {% include modals.html %}
     {% include js.html %}
